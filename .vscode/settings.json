@@ -1,0 +1,24 @@
+{
+    // Use Black as the formatter
+    "python.formatting.provider": "black",
+    // Use the venv's tools
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    // Linting
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.pylintEnabled": false,
+    // Autoformat + fixes on save
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit"
+    },
+    // Optional: point Black to desired line-length if different than default
+    "python.formatting.blackArgs": [
+        "--line-length=88"
+    ],
+    // Optional: reduce noise from type checking if you don't use pylance strictness
+    "python.analysis.typeCheckingMode": "off"
+}
