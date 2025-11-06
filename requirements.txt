@@ -1,0 +1,9 @@
+# Core dependencies for examples and notebooks
+numpy>=2.2
+pandas>=2.3
+matplotlib>=3.10
+jupyter>=1.1
+pyomo==6.10
+
+# Dev / testing (optional)
+pytest>=8.4
