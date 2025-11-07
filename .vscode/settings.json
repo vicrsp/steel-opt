@@ -15,10 +15,16 @@
         "source.organizeImports": "explicit",
         "source.fixAll": "explicit"
     },
-    // Optional: point Black to desired line-length if different than default
-    "python.formatting.blackArgs": [
-        "--line-length=88"
-    ],
     // Optional: reduce noise from type checking if you don't use pylance strictness
-    "python.analysis.typeCheckingMode": "off"
+    "python.analysis.typeCheckingMode": "off",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./models/tests",
+        "-p",
+        "*_test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true
 }
